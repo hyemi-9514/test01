@@ -1,0 +1,487 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>원탑 수학학원</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="분당 정자동 원탑 수학학원 | 초등 고학년·중등 수학 소수정예 수업, 주간 테스트와 월간 학부모 리포트로 관리합니다. 정자동 수학학원, 분당 중등수학 상담 예약.">
+<meta name="keywords" content="정자동 수학학원, 분당 중등수학, 분당 수학학원, 정자동 중등수학, 분당 초등수학, 소수정예 수학학원">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500;700;800;900&family=Noto+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"EducationalOrganization","name":"원탑 수학학원","alternateName":"One Top Math Academy","description":"분당 정자동 초등 고학년·중등 수학 소수정예 학원","address":{"@type":"PostalAddress","addressRegion":"경기도","addressLocality":"성남시 분당구","streetAddress":"정자동"},"telephone":"031-000-0000","areaServed":"분당구 정자동"}
+</script>
+<style>
+/* Layout: 칠판처럼 짙은 남색 띠와 밝은 종이색 띠가 번갈아 오는 세로 흐름. 로고의 금색 곡선을 유일한 장식 요소로 씀 */
+:root{
+  --paper:#F6F7FA; --surface:#FFFFFF; --ink:#152238; --muted:#5A6577; --line:#DDE2EA;
+  --navy:#16294A; --navy-2:#1F3762; --on-navy:#EEF2F8; --on-navy-muted:#A9B6CB;
+  --gold:#B48A45; --gold-soft:#F3EBDD; --gold-ink:#7A5A23;
+  --chalk:rgba(255,255,255,.08);
+  --f-display:"Gothic A1","Noto Sans KR",system-ui,sans-serif;
+  --f-body:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --f-num:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --wrap:1120px; --r:14px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0E1522; --surface:#152033; --ink:#E7ECF4; --muted:#9AA6B9; --line:#26334A;
+  --navy:#0A1220; --navy-2:#13213A; --on-navy:#EEF2F8; --on-navy-muted:#9DAAC0;
+  --gold:#D3AE6C; --gold-soft:#2A2416; --gold-ink:#E2C48E; --chalk:rgba(255,255,255,.06); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0E1522; --surface:#152033; --ink:#E7ECF4; --muted:#9AA6B9; --line:#26334A;
+  --navy:#0A1220; --navy-2:#13213A; --on-navy:#EEF2F8; --on-navy-muted:#9DAAC0;
+  --gold:#D3AE6C; --gold-soft:#2A2416; --gold-ink:#E2C48E; --chalk:rgba(255,255,255,.06); color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.7;word-break:keep-all;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:var(--f-display);line-height:1.25;margin:0;text-wrap:balance;letter-spacing:-.02em}
+p{margin:0}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+
+.band{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:88px}
+.wrap{max-width:var(--wrap);margin:0 auto}
+.eyebrow{font-family:var(--f-num);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-ink);display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--gold);border-radius:2px}
+.sec-head{display:grid;gap:14px;max-width:640px;margin-bottom:44px}
+.sec-head h2{font-size:clamp(28px,4vw,40px);font-weight:800}
+.sec-head p{color:var(--muted);font-size:17px}
+
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-display);font-weight:700;font-size:16px;padding:14px 22px;border-radius:999px;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-gold{background:var(--gold);color:#1A1307}
+.btn-line{border-color:currentColor;background:transparent}
+
+/* header */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--surface)}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand .mk{width:40px;height:38px;border-radius:9px;background:#fff;padding:3px;display:grid;place-items:center}
+.brand b{font-family:var(--f-display);font-weight:900;font-size:20px;letter-spacing:-.03em}
+.brand small{display:block;font-family:var(--f-num);font-size:9.5px;letter-spacing:.2em;color:var(--muted);margin-top:-4px}
+.nav{display:flex;gap:4px;align-items:center}
+.nav a{text-decoration:none;font-size:15px;font-weight:500;padding:8px 12px;border-radius:8px;color:var(--muted)}
+.nav a:hover{color:var(--ink);background:var(--paper)}
+.nav .btn{color:#1A1307;margin-left:8px;padding:10px 18px;font-size:15px}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--ink);border-radius:10px;padding:8px 12px;font:600 14px var(--f-body);cursor:pointer}
+@media (max-width:900px){
+  .menu-btn{display:block}
+  .nav{position:absolute;left:0;right:0;top:68px;flex-direction:column;align-items:stretch;background:var(--surface);border-bottom:1px solid var(--line);padding:10px max(16px,env(safe-area-inset-right,0px)) 18px max(16px,env(safe-area-inset-left,0px));display:none}
+  .nav.open{display:flex}
+  .nav .btn{margin:8px 0 0;justify-content:center}
+}
+
+/* hero */
+.hero{background:var(--navy);color:var(--on-navy);position:relative;overflow:hidden;padding-block:72px 80px}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--chalk) 1px,transparent 1px),linear-gradient(90deg,var(--chalk) 1px,transparent 1px);background-size:40px 40px;mask-image:linear-gradient(90deg,transparent,#000 60%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero .eyebrow{color:var(--gold)}
+.hero h1{font-size:clamp(34px,5.4vw,60px);font-weight:900;margin:18px 0 20px;letter-spacing:-.035em}
+.hero h1 em{font-style:normal;color:var(--gold);position:relative;white-space:nowrap}
+.hero h1 em svg{position:absolute;left:-4%;bottom:-14px;width:108%;height:22px;overflow:visible}
+.hero-lead{color:var(--on-navy-muted);font-size:18px;max-width:30em}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.hero-cta .btn-line{color:var(--on-navy)}
+.facts{display:flex;flex-wrap:wrap;gap:28px;margin-top:44px;padding-top:24px;border-top:1px solid rgba(255,255,255,.14)}
+.facts div{display:grid}
+.facts strong{font-family:var(--f-num);font-size:28px;font-weight:500;color:var(--on-navy);font-variant-numeric:tabular-nums;line-height:1.2}
+.facts span{font-size:13.5px;color:var(--on-navy-muted)}
+.hero-photo{position:relative;min-width:0}
+.hero-photo img{border-radius:var(--r);aspect-ratio:966/544;object-fit:cover;width:100%}
+.hero-photo .tag{position:absolute;left:-18px;bottom:24px;background:var(--surface);color:var(--ink);border-radius:12px;padding:14px 18px;box-shadow:0 12px 30px rgba(0,0,0,.25);display:grid;gap:2px;max-width:240px}
+.tag b{font-family:var(--f-display);font-size:15px}
+.tag span{font-size:13px;color:var(--muted)}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr}.hero-photo .tag{left:12px}}
+
+/* parents' three questions */
+.qa{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.qa article{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:30px 28px;display:grid;gap:14px;align-content:start;min-width:0}
+.qa .q{font-family:var(--f-display);font-weight:800;font-size:21px}
+.qa .q::before{content:"Q.";color:var(--gold);margin-right:8px;font-family:var(--f-num);font-weight:500}
+.qa p{color:var(--muted)}
+.qa ul{margin:4px 0 0;padding:0;list-style:none;display:grid;gap:8px;border-top:1px dashed var(--line);padding-top:16px}
+.qa li{display:flex;gap:10px;font-size:15px}
+.qa li::before{content:"";flex:none;width:6px;height:6px;margin-top:10px;border-radius:50%;background:var(--gold)}
+@media (max-width:900px){.qa{grid-template-columns:1fr}}
+
+/* curriculum */
+.alt{background:var(--surface);border-block:1px solid var(--line)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.tab{font:700 15px var(--f-display);padding:10px 20px;border-radius:999px;border:1.5px solid var(--line);background:transparent;color:var(--muted);cursor:pointer}
+.tab[aria-selected="true"]{background:var(--navy);border-color:var(--navy);color:var(--on-navy)}
+.panel{display:grid;grid-template-columns:1fr 1.15fr;gap:40px;align-items:start}
+.panel h3{font-size:26px;font-weight:800;margin-bottom:12px}
+.panel .goal{color:var(--muted);margin-bottom:22px}
+.units{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.units li{display:grid;grid-template-columns:76px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+.units .when{font-family:var(--f-num);font-size:13px;color:var(--gold-ink);padding-top:3px}
+.units b{display:block;font-family:var(--f-display)}
+.units span{font-size:14.5px;color:var(--muted)}
+.tt-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);background:var(--paper);min-width:0}
+.tt{width:100%;border-collapse:collapse;font-size:14.5px;min-width:440px}
+.tt caption{text-align:left;padding:16px 18px 6px;font:800 15px var(--f-display)}
+.tt th,.tt td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line)}
+.tt th{font-size:12.5px;color:var(--muted);font-weight:500}
+.tt td.num{font-family:var(--f-num);font-variant-numeric:tabular-nums;white-space:nowrap}
+.tt tr:last-child td{border-bottom:0}
+.chip{display:inline-block;font-size:12px;font-weight:700;padding:3px 9px;border-radius:999px;background:var(--gold-soft);color:var(--gold-ink)}
+.note{font-size:13px;color:var(--muted);padding:12px 18px 16px}
+@media (max-width:900px){.panel{grid-template-columns:1fr}}
+
+/* management cycle */
+.cycle-band{background:var(--navy);color:var(--on-navy)}
+.cycle-band .sec-head p{color:var(--on-navy-muted)}
+.cycle-band .eyebrow{color:var(--gold)}
+.cycle{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:0;counter-reset:s}
+.cycle li{position:relative;padding:0 18px 0 0;display:grid;gap:10px;align-content:start;min-width:0}
+.cycle .dot{display:flex;align-items:center;gap:10px;font-family:var(--f-num);font-size:13px;color:var(--gold)}
+.cycle .dot::before{counter-increment:s;content:counter(s);width:34px;height:34px;flex:none;border-radius:50%;border:1.5px solid var(--gold);display:grid;place-items:center;font-size:14px}
+.cycle .dot::after{content:"";flex:1;height:1.5px;background:linear-gradient(90deg,var(--gold),transparent)}
+.cycle li:last-child .dot::after{display:none}
+.cycle b{font-family:var(--f-display);font-size:18px}
+.cycle p{font-size:14.5px;color:var(--on-navy-muted)}
+.report{margin-top:48px;display:grid;grid-template-columns:1fr 1fr;gap:28px;background:var(--navy-2);border-radius:var(--r);padding:28px;align-items:center}
+.report h3{font-size:22px;font-weight:800;margin-bottom:8px}
+.report p{color:var(--on-navy-muted);font-size:15px}
+.bars{display:grid;gap:10px;font-size:13px;min-width:0}
+.bar{display:grid;grid-template-columns:62px 1fr 44px;gap:10px;align-items:center}
+.bar i{display:block;height:10px;border-radius:5px;background:rgba(255,255,255,.1);position:relative;overflow:hidden}
+.bar i::after{content:"";position:absolute;inset:0 auto 0 0;width:var(--w);background:var(--gold);border-radius:5px}
+.bar em{font-style:normal;font-family:var(--f-num);text-align:right;font-variant-numeric:tabular-nums}
+.bars small{color:var(--on-navy-muted)}
+@media (max-width:900px){.cycle{grid-template-columns:1fr;gap:24px}.cycle .dot::after{display:none}.report{grid-template-columns:1fr}}
+
+/* teachers */
+.teachers{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.teacher{display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:start;min-width:0}
+.teacher img{border-radius:var(--r);aspect-ratio:5/6;object-fit:cover;object-position:top;width:100%}
+.teacher .role{font-size:13.5px;color:var(--gold-ink);font-weight:700}
+.teacher h3{font-size:24px;font-weight:800;margin:4px 0 12px}
+.teacher blockquote{margin:0 0 14px;padding-left:14px;border-left:2px solid var(--gold);font-size:15.5px}
+.teacher ul{margin:0;padding:0;list-style:none;display:grid;gap:4px;font-size:14px;color:var(--muted)}
+@media (max-width:980px){.teachers{grid-template-columns:1fr}}
+@media (max-width:520px){.teacher{grid-template-columns:1fr}.teacher img{max-width:260px}}
+
+/* facility */
+.fac{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.fac figure{margin:0;display:grid;gap:12px}
+.fac img{border-radius:var(--r);aspect-ratio:4/5;object-fit:cover;width:100%}
+.fac figcaption b{font-family:var(--f-display);display:block}
+.fac figcaption span{font-size:14px;color:var(--muted)}
+@media (max-width:760px){.fac{grid-template-columns:1fr}.fac img{aspect-ratio:16/10}}
+
+/* students */
+.kid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.kid div{background:var(--gold-soft);border-radius:var(--r);padding:22px;display:grid;gap:6px;align-content:start}
+.kid .f{font-family:var(--f-num);font-size:22px;color:var(--gold-ink)}
+.kid b{font-family:var(--f-display);font-size:17px}
+.kid p{font-size:14.5px;color:var(--muted)}
+@media (max-width:900px){.kid{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.kid{grid-template-columns:1fr}}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:start}
+.info{display:grid;gap:22px}
+.info dl{margin:0;display:grid;grid-template-columns:88px 1fr;gap:12px 16px;font-size:15.5px}
+.info dt{color:var(--muted);font-size:14px}
+.info dd{margin:0;font-variant-numeric:tabular-nums}
+.copy{margin-left:8px;font:600 12px var(--f-body);padding:3px 10px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted);cursor:pointer}
+.links{display:flex;flex-wrap:wrap;gap:10px}
+.links a{font-size:14.5px;font-weight:700;text-decoration:none;padding:10px 16px;border-radius:10px;border:1.5px solid var(--line);background:var(--surface)}
+.links a .n{color:#03A94D}
+form.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:28px;display:grid;gap:16px;min-width:0}
+form.card h3{font-size:22px;font-weight:800}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:grid;gap:6px;font-size:14px;font-weight:500}
+input,select,textarea{font:inherit;font-size:15px;padding:12px 14px;border-radius:10px;border:1.5px solid var(--line);background:var(--paper);color:var(--ink);width:100%}
+textarea{min-height:92px;resize:vertical}
+.agree{display:flex;gap:8px;align-items:flex-start;font-weight:400;font-size:13.5px;color:var(--muted)}
+.agree input{width:auto;margin-top:4px}
+.done{background:var(--gold-soft);color:var(--gold-ink);border-radius:10px;padding:14px 16px;font-size:14.5px}
+.err{color:#C2412D;font-size:13.5px}
+@media (max-width:900px){.contact{grid-template-columns:1fr}}
+@media (max-width:480px){.row{grid-template-columns:1fr}}
+
+footer{background:var(--navy);color:var(--on-navy-muted);font-size:13.5px;padding-block:40px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
+footer b{color:var(--on-navy);font-family:var(--f-display)}
+
+.float-cta{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+@media (min-width:901px){.float-cta{display:none}}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="원탑 수학학원 처음으로">
+      <span class="mk"><img src="img/mark.png" alt="" width="34" height="32"></span>
+      <span><b>원탑 수학학원</b><small>ONE TOP MATH ACADEMY</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">메뉴</button>
+    <nav class="nav" id="nav">
+      <a href="#why">학원 소개</a>
+      <a href="#curriculum">커리큘럼</a>
+      <a href="#care">관리 시스템</a>
+      <a href="#teachers">강사진</a>
+      <a href="#facility">시설</a>
+      <a href="#contact">오시는 길</a>
+      <a class="btn btn-gold" href="#contact">상담 예약</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="band hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">분당 정자동 · 초등 고학년 · 중등 수학</p>
+        <h1>수학 하나만큼은,<br>우리 아이가 <em>원탑<svg viewBox="0 0 200 22" preserveAspectRatio="none" aria-hidden="true"><path d="M2 18 C 60 4, 140 2, 198 10" fill="none" stroke="var(--gold)" stroke-width="4" stroke-linecap="round"/></svg></em>이 되도록.</h1>
+        <p class="hero-lead">한 반 8명 이하 소수정예 수업, 매주 치르는 단원 테스트, 매달 보내드리는 학습 리포트. 수업에서 끝나지 않고 아이가 실제로 이해했는지까지 확인합니다.</p>
+        <div class="hero-cta">
+          <a class="btn btn-gold" href="#contact">무료 레벨테스트 예약</a>
+          <a class="btn btn-line" href="#curriculum">학년별 커리큘럼 보기</a>
+        </div>
+        <div class="facts">
+          <div><strong>8명</strong><span>반당 최대 정원</span></div>
+          <div><strong>주 1회</strong><span>단원 누적 테스트</span></div>
+          <div><strong>월 1회</strong><span>학부모 학습 리포트</span></div>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="img/hero.jpg" alt="원탑 수학학원 강의실, 자습실, 안내 데스크" width="966" height="544">
+        <div class="tag"><b>초5 ~ 중3 학년별 반 운영</b><span>레벨테스트 후 반 배정</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="why">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">학부모님이 가장 많이 묻는 질문</p>
+        <h2>상담에서 늘 나오는 세 가지 질문에 먼저 답합니다</h2>
+      </div>
+      <div class="qa">
+        <article>
+          <p class="q">믿고 맡길 수 있나요?</p>
+          <p>원장이 직접 수업하고, 담당 강사가 바뀌지 않습니다. 아이를 처음 본 사람이 끝까지 책임집니다.</p>
+          <ul><li>원장 직강 + 전담 강사 1인 체제</li><li>입학 전 레벨테스트와 1:1 상담</li><li>수업 운영 원칙을 상담 때 문서로 안내</li></ul>
+        </article>
+        <article>
+          <p class="q">우리 아이를 잘 챙겨주나요?</p>
+          <p>8명 이하 반이라 수업 중 모든 학생의 풀이를 직접 봅니다. 틀린 문제는 그날 바로 다시 풉니다.</p>
+          <ul><li>숙제 검사와 오답 노트 매 수업 확인</li><li>결석·지각 시 당일 문자 안내</li><li>수업 후 자습실에서 질문 받기</li></ul>
+        </article>
+        <article>
+          <p class="q">성적이 정말 오르나요?</p>
+          <p>주간 테스트 점수와 오답 유형을 기록해 두고, 약한 단원은 다음 주 수업에서 다시 다룹니다.</p>
+          <ul><li>주간 테스트 결과로 약점 단원 추적</li><li>내신 4주 전부터 학교별 기출 대비</li><li>월간 리포트로 변화를 숫자로 확인</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band alt" id="curriculum">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Curriculum</p>
+        <h2>학년별 커리큘럼과 시간표</h2>
+        <p>개념을 먼저 정확히 잡고, 심화는 아이의 속도에 맞춰 올립니다. 선행 진도보다 현행 완성도를 먼저 봅니다.</p>
+      </div>
+      <div class="tabs" role="tablist" aria-label="학년 선택">
+        <button class="tab" role="tab" id="tab-e" aria-controls="p-e" aria-selected="true">초등 5·6학년</button>
+        <button class="tab" role="tab" id="tab-m1" aria-controls="p-m1" aria-selected="false">중1</button>
+        <button class="tab" role="tab" id="tab-m2" aria-controls="p-m2" aria-selected="false">중2</button>
+        <button class="tab" role="tab" id="tab-m3" aria-controls="p-m3" aria-selected="false">중3</button>
+      </div>
+      <div id="panels"></div>
+    </div>
+  </section>
+
+  <section class="band cycle-band" id="care">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">관리 시스템</p>
+        <h2>입학부터 매달 리포트까지, 같은 순서로 관리합니다</h2>
+        <p>모든 학생이 아래 다섯 단계를 거칩니다. 단계마다 기록이 남아서 상담 때 근거를 보여드릴 수 있습니다.</p>
+      </div>
+      <ol class="cycle">
+        <li><span class="dot">입학 전</span><b>진단 레벨테스트</b><p>학년 개념 이해도와 연산 정확도를 따로 측정합니다.</p></li>
+        <li><span class="dot">1주차</span><b>반 배정 · 상담</b><p>테스트 결과를 학부모님과 함께 보고 반과 진도를 정합니다.</p></li>
+        <li><span class="dot">매 수업</span><b>개념 수업 · 숙제 확인</b><p>풀이 과정을 직접 확인하고 오답은 그날 다시 풉니다.</p></li>
+        <li><span class="dot">매주</span><b>누적 단원 테스트</b><p>지난 단원까지 섞어 출제해 잊은 개념을 찾아냅니다.</p></li>
+        <li><span class="dot">매월</span><b>학습 리포트 발송</b><p>점수 추이, 약점 단원, 다음 달 계획을 정리해 보내드립니다.</p></li>
+      </ol>
+      <div class="report">
+        <div>
+          <h3>월간 리포트는 이렇게 생겼습니다</h3>
+          <p>단원별 정답률을 막대로 보여드리고, 70% 아래 단원은 다음 달 보충 계획을 함께 적어 드립니다. 아래는 예시 학생의 리포트 일부입니다.</p>
+        </div>
+        <div class="bars" role="img" aria-label="예시 리포트: 단원별 정답률. 소인수분해 92%, 정수와 유리수 85%, 일차방정식 68%, 좌표평면 74%">
+          <small>예시 · 중1 10월 단원별 정답률</small>
+          <div class="bar"><span>소인수분해</span><i style="--w:92%"></i><em>92%</em></div>
+          <div class="bar"><span>정수·유리수</span><i style="--w:85%"></i><em>85%</em></div>
+          <div class="bar"><span>일차방정식</span><i style="--w:68%"></i><em>68%</em></div>
+          <div class="bar"><span>좌표평면</span><i style="--w:74%"></i><em>74%</em></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="teachers">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">강사진</p>
+        <h2>처음 만난 선생님이 끝까지 가르칩니다</h2>
+      </div>
+      <div class="teachers">
+        <div class="teacher">
+          <img src="img/t2.jpg" alt="원탑 수학학원 원장 사진" width="640" height="768" loading="lazy">
+          <div>
+            <p class="role">원장 · 중등 전 학년 담당</p>
+            <h3>김OO 원장</h3>
+            <blockquote>문제를 많이 푸는 것보다, 한 문제를 왜 그렇게 푸는지 설명할 수 있는 아이로 키웁니다.</blockquote>
+            <ul><li>중등 수학 지도 경력 OO년</li><li>분당 지역 중학교 내신 기출 분석</li><li>월간 학습 리포트 직접 작성</li></ul>
+          </div>
+        </div>
+        <div class="teacher">
+          <img src="img/t1.jpg" alt="원탑 수학학원 강사 사진" width="640" height="768" loading="lazy">
+          <div>
+            <p class="role">전임 강사 · 초등 고학년·중1 담당</p>
+            <h3>이OO 선생님</h3>
+            <blockquote>수학이 무섭지 않은 과목이 되도록, 아이가 스스로 맞힌 경험을 매 수업 만들어 줍니다.</blockquote>
+            <ul><li>초·중등 수학 지도 경력 OO년</li><li>연산·서술형 기초 프로그램 운영</li><li>초등 → 중등 전환기 집중 관리</li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band alt" id="facility">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">시설</p>
+        <h2>수업, 자습, 상담을 한 곳에서</h2>
+        <p>강의실 옆에 개인 자습석이 있어 수업이 끝난 뒤 남아서 숙제하고 질문할 수 있습니다.</p>
+      </div>
+      <div class="fac">
+        <figure><img src="img/fac1.jpg" alt="소수정예 강의실" width="318" height="544" loading="lazy"><figcaption><b>소수정예 강의실</b><span>8인 이하 책상 배치, 판서가 잘 보이는 대형 칠판</span></figcaption></figure>
+        <figure><img src="img/fac2.jpg" alt="개인 자습실 칸막이 좌석" width="318" height="544" loading="lazy"><figcaption><b>개인 자습실</b><span>칸막이 개인석과 조명, 수업 전후 자유 이용</span></figcaption></figure>
+        <figure><img src="img/fac3.jpg" alt="원탑 수학학원 안내 데스크" width="318" height="544" loading="lazy"><figcaption><b>안내 데스크 · 상담</b><span>레벨테스트와 학부모 상담을 진행하는 공간</span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="students">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">학생에게</p>
+        <h2>처음 오는 날, 이렇게 시작해요</h2>
+        <p>긴장하지 않아도 괜찮아요. 첫날은 시험이 아니라 지금 어디까지 알고 있는지 같이 확인하는 시간이에요.</p>
+      </div>
+      <div class="kid">
+        <div><span class="f">x²</span><b>모르는 건 그냥 물어봐요</b><p>8명뿐이라 손 들기 어렵지 않아요. 수업 끝나고 자습실에서 물어봐도 돼요.</p></div>
+        <div><span class="f">π</span><b>숙제는 딱 할 만큼</b><p>그날 배운 걸 확인하는 양만 내요. 대신 오답은 꼭 다시 풀어 와요.</p></div>
+        <div><span class="f">Σ</span><b>테스트는 점검용</b><p>주간 테스트는 혼내려는 게 아니라 잊은 걸 찾으려는 거예요.</p></div>
+        <div><span class="f">√</span><b>자습실은 내 자리</b><p>수업 전후로 비어 있는 자리에서 숙제하고 가도 돼요.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band alt" id="contact">
+    <div class="wrap contact">
+      <div class="info">
+        <div class="sec-head" style="margin-bottom:0">
+          <p class="eyebrow">상담 · 오시는 길</p>
+          <h2>레벨테스트와 첫 상담은 무료입니다</h2>
+          <p>상담은 약 40분, 레벨테스트 결과를 보면서 진행합니다. 방문 전 전화나 아래 신청서로 시간을 정해 주세요.</p>
+        </div>
+        <dl>
+          <dt>전화</dt><dd><span id="tel">031-000-0000</span><button class="copy" type="button" data-copy="tel">복사</button></dd>
+          <dt>주소</dt><dd>경기도 성남시 분당구 정자동 OO로 OO, O층</dd>
+          <dt>교통</dt><dd>신분당선·수인분당선 정자역 도보 O분</dd>
+          <dt>상담 시간</dt><dd>평일 13:00 – 22:00 · 토 10:00 – 17:00</dd>
+        </dl>
+        <div class="links">
+          <a href="https://map.naver.com/p/search/%EC%A0%95%EC%9E%90%EB%8F%99%20%EC%9B%90%ED%83%91%20%EC%88%98%ED%95%99%ED%95%99%EC%9B%90" target="_blank" rel="noopener"><span class="n">N</span> 네이버 플레이스</a>
+          <a href="https://blog.naver.com/" target="_blank" rel="noopener"><span class="n">N</span> 학원 블로그</a>
+        </div>
+      </div>
+      <form class="card" id="form" novalidate>
+        <h3>상담 예약 신청</h3>
+        <div class="row">
+          <label for="f-name">학부모 성함<input id="f-name" name="name" autocomplete="name" required></label>
+          <label for="f-phone">연락처<input id="f-phone" name="phone" type="tel" inputmode="tel" placeholder="010-0000-0000" autocomplete="tel" required></label>
+        </div>
+        <div class="row">
+          <label for="f-grade">학생 학년<select id="f-grade" name="grade" required><option value="">선택</option><option>초등 5학년</option><option>초등 6학년</option><option>중학교 1학년</option><option>중학교 2학년</option><option>중학교 3학년</option></select></label>
+          <label for="f-time">희망 상담 시간<select id="f-time" name="time"><option>평일 오후</option><option>평일 저녁</option><option>토요일</option></select></label>
+        </div>
+        <label for="f-msg">궁금한 점 (선택)<textarea id="f-msg" name="msg" placeholder="예: 현재 다니는 학교, 최근 시험 점수, 걱정되는 단원"></textarea></label>
+        <label class="agree" for="f-agree"><input id="f-agree" type="checkbox" required>상담 연락을 위한 개인정보(성함, 연락처) 수집·이용에 동의합니다.</label>
+        <p class="err" id="err" hidden></p>
+        <button class="btn btn-gold" type="submit">상담 신청하기</button>
+        <p class="done" id="done" hidden></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="band">
+  <div class="wrap">
+    <div><b>원탑 수학학원</b> · ONE TOP MATH ACADEMY<br>경기도 성남시 분당구 정자동 · 대표 김OO · 학원등록번호 제OOOO호</div>
+    <div>교습과목: 수학 (초등·중등)<br>© 2026 원탑 수학학원</div>
+  </div>
+</footer>
+
+<a class="btn btn-gold float-cta" href="#contact">상담 예약</a>
+
+<script>
+const DATA={
+ e:{t:"초등 5·6학년",goal:"분수·비율·도형의 개념을 탄탄히 다지고, 중학교 문자식으로 넘어갈 준비를 합니다.",
+  units:[["1학기","분수의 곱셈·나눗셈","약분과 통분 실수 줄이기, 서술형 풀이 쓰기"],["2학기","비와 비율 · 비례식","백분율·속력 문제를 식으로 세우는 연습"],["겨울방학","중1 대비 브리지","음수와 문자 사용, 방정식 맛보기"]],
+  rows:[["A반 (5학년)","월·수·금","16:00–17:30","개념"],["B반 (6학년)","화·목","16:00–18:00","개념+심화"]]},
+ m1:{t:"중1",goal:"초등 산수에서 중등 수학으로 넘어가는 시기. 문자와 식, 방정식의 기초를 흔들림 없이 세웁니다.",
+  units:[["1학기","소인수분해 · 정수와 유리수","부호 계산 정확도 100%를 목표로 반복"],["1학기","문자와 식 · 일차방정식","문장제를 식으로 바꾸는 단계별 훈련"],["2학기","기본 도형 · 통계","작도·합동 서술형, 자료 해석"]],
+  rows:[["중1 기본","월·수·금","18:00–19:50","현행"],["중1 심화","화·목·토","18:00–20:00","현행+심화"]]},
+ m2:{t:"중2",goal:"중등 수학에서 가장 어려워지는 학년. 일차함수와 도형 증명을 확실히 잡아야 중3이 편해집니다.",
+  units:[["1학기","유리수와 순환소수 · 식의 계산","지수법칙, 다항식 계산 속도 올리기"],["1학기","연립방정식 · 일차함수","그래프 해석과 함수식 세우기 집중"],["2학기","삼각형·사각형의 성질 · 확률","증명 서술형을 문장으로 쓰는 연습"]],
+  rows:[["중2 기본","월·수·금","20:00–21:50","현행"],["중2 심화","화·목·토","20:00–22:00","현행+심화"]]},
+ m3:{t:"중3",goal:"중등 수학의 완성과 고등 수학 연결. 이차방정식·이차함수를 고1 수학과 이어서 정리합니다.",
+  units:[["1학기","제곱근과 실수 · 인수분해","고1 다항식으로 이어지는 계산력"],["1학기","이차방정식 · 이차함수","판별식, 그래프 이동, 최대·최소"],["2학기","삼각비 · 원의 성질 → 고1 브리지","고1 공통수학 선행 연결"]],
+  rows:[["중3 기본","월·수·금","20:00–21:50","현행+고1 연결"],["중3 심화","화·목·토","20:00–22:00","심화+고1 선행"]]}
+};
+const panels=document.getElementById('panels');
+panels.innerHTML=Object.entries(DATA).map(([k,d])=>`
+<div class="panel" role="tabpanel" id="p-${k}" aria-labelledby="tab-${k}" ${k==='e'?'':'hidden'}>
+  <div><h3>${d.t} 과정</h3><p class="goal">${d.goal}</p>
+  <ul class="units">${d.units.map(u=>`<li><span class="when">${u[0]}</span><div><b>${u[1]}</b><span>${u[2]}</span></div></li>`).join('')}</ul></div>
+  <div class="tt-wrap"><table class="tt"><caption>${d.t} 시간표</caption>
+  <thead><tr><th>반</th><th>요일</th><th>시간</th><th>구성</th></tr></thead>
+  <tbody>${d.rows.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td><td class="num">${r[2]}</td><td><span class="chip">${r[3]}</span></td></tr>`).join('')}</tbody></table>
+  <p class="note">내신 시험 4주 전부터는 학교별 대비반으로 전환합니다. 인근 중학교별 기출을 분석해 수업합니다.</p></div>
+</div>`).join('');
+const tabs=[...document.querySelectorAll('.tab')];
+function sel(t){tabs.forEach(x=>{const on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;document.getElementById(x.getAttribute('aria-controls')).hidden=!on})}
+tabs.forEach((t,i)=>{t.tabIndex=i?-1:0;t.addEventListener('click',()=>sel(t));t.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){const n=tabs[(i+(e.key==='ArrowRight'?1:tabs.length-1))%tabs.length];sel(n);n.focus()}})});
+
+const mb=document.getElementById('menuBtn'),nav=document.getElementById('nav');
+mb.addEventListener('click',()=>{const o=nav.classList.toggle('open');mb.setAttribute('aria-expanded',o)});
+nav.addEventListener('click',e=>{if(e.target.closest('a')){nav.classList.remove('open');mb.setAttribute('aria-expanded',false)}});
+
+document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',()=>{
+  const el=document.getElementById(b.dataset.copy);const txt=el.textContent;
+  const ok=()=>{b.textContent='복사됨';setTimeout(()=>b.textContent='복사',1500)};
+  try{navigator.clipboard.writeText(txt).then(ok,()=>{selectText(el)})}catch(_){selectText(el)}
+}));
+function selectText(el){const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r)}
+
+document.getElementById('form').addEventListener('submit',e=>{
+  e.preventDefault();const f=e.target,err=document.getElementById('err'),done=document.getElementById('done');
+  const miss=[];if(!f.name.value.trim())miss.push('학부모 성함');if(!/^0\d{1,2}-?\d{3,4}-?\d{4}$/.test(f.phone.value.trim()))miss.push('연락처(예: 010-1234-5678)');if(!f.grade.value)miss.push('학생 학년');if(!document.getElementById('f-agree').checked)miss.push('개인정보 수집 동의');
+  if(miss.length){err.textContent='다음 항목을 확인해 주세요: '+miss.join(', ');err.hidden=false;done.hidden=true;return}
+  err.hidden=true;done.textContent=`${f.name.value.trim()}님, ${f.grade.value} 상담 신청이 접수되었습니다. ${f.time.value} 중 ${f.phone.value.trim()}로 연락드리겠습니다.`;done.hidden=false;f.querySelector('button[type=submit]').disabled=true;
+});
+</script>
+
+</body></html>
